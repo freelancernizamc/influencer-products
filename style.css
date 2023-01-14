@@ -159,8 +159,25 @@ footer{
 
 /* Responsive code */
 @media only screen and (max-width: 576px) {
+    header{
+        width: 90%;
+    }
+    nav{
+        justify-content: space-around;
+    }
     nav h1{
-        font-size: 18px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    nav ul{
+        margin-left: 2px;
+    }
+    nav ul i{
+        display: none;
+    }
+    ul li a{
+        padding-left: 2px;
+        font-size: 10px;
     }
     .header-banner{
         flex-direction: column-reverse;
@@ -174,26 +191,41 @@ footer{
     }
     .banner-text h1{
         
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 500;
         }
         .banner-text p{
-            font-size: 16px;
-            padding-left: 10px;
+            font-size: 10px;
+            padding-left: 5px;
+            padding-right: 20px;
         }
     
     .header-banner img{
-            width: 340px;
+            width: 350px;
             height: 214px;
         }
+        .brand{
+            justify-content:space-evenly;
+            padding-right: 20px;
+        }
     
-    .brand{
-        flex-direction: column;
-        text-align: right;
+    .brand img{
+        width: 30px;
+        
     }
     .collection-items{
         grid-template-columns: repeat(1, 1fr);
         flex-direction: column;
+        padding-left: 5px;
+    }
+    .item img{
+        width: 435px;
+    }
+    .second-part{
+        flex-direction: column;
+    }
+    .second-part .part2 button{
+        margin-bottom: 10px;
     }
 }
 @media only screen and (min-width: 577px) and (max-width: 992px) {
